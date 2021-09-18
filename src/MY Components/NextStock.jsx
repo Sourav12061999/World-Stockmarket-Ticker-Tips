@@ -1,12 +1,8 @@
 import React from 'react'
-
+import '../AllCSS/pagination.css'
 function NextStock({totalStocks,setcurrent,current}) {
-    var pageno=[];
-    for(let i=1;i<=Math.ceil(totalStocks/50);i++){
-        pageno.push(i);
-    }
     function currentplus(){
-        if(current<Math.ceil(totalStocks/50)){
+        if(current<Math.ceil(totalStocks/35)){
             var now=current+1;
         setcurrent(now);
         }
@@ -18,9 +14,12 @@ function NextStock({totalStocks,setcurrent,current}) {
         }
     }
     return (
-        <div>
+        <div className='paginate'>
+            <div className="buttons">
             <button onClick={currentminus}>{'<'}</button>
+            {current}/{Math.ceil(totalStocks/35)}
             <button onClick={currentplus}>{'>'}</button>
+            </div>
         </div>
     )
 }

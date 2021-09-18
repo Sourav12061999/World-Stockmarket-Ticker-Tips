@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.paginate{
+    width: 100%;
+}
+.buttons{
+    width: 100px;
+    margin: auto;
+}
+.buttons button{
+    padding: 2%;
+    margin: 2%;
+
+}

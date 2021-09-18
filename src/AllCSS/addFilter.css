@@ -1,0 +1,42 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --optionShow:1;
+}
+.filterwindow{
+    width: 40vw;
+    height: 90vh;
+    z-index: 1;
+    border: 2px solid red;
+    position: absolute;
+    bottom:5%;
+    left: 30%;
+    background-color: #FAFAFA;
+}
+.filterwindow-heading,.filterwindow-bottom{
+    width: 100%;
+    height: 15%;
+    border: 1px solid black;
+}
+.filterwindow-body{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    border: 1px solid black;
+
+}
+.filterwindow-optionselector,.filterwindow-options{
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    position: relative;
+}
+.filterwindow-option-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
